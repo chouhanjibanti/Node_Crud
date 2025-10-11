@@ -1,0 +1,11 @@
+
+11/10/2025, 12:40:19 pm | POST | /api/admin
+11/10/2025, 12:42:57 pm | POST | /api/admin/68ea02db2ca93020d71b86d4
+11/10/2025, 12:43:01 pm | GET | /api/admin/68ea02db2ca93020d71b86d4
+11/10/2025, 12:45:16 pm | POST | /api/trainer
+11/10/2025, 12:49:55 pm | POST | /api/trainer
+11/10/2025, 12:50:36 pm | POST | /api/trainer
+11/10/2025, 12:51:33 pm | POST | /api/admin
+11/10/2025, 12:52:06 pm | POST | /api/admin
+11/10/2025, 12:55:03 pm | PUT | /api/admin/68ea059e2ca93020d71b86df
+11/10/2025, 12:55:43 pm | DELETE | /api/admin/68ea059e2ca93020d71b86df
