@@ -10,7 +10,10 @@ const app = express();
 
 // Step-3: Connect MongoDB
 mongoose
-  .connect("mongodb+srv://bantichouhan610:i9yJtX5RZbvuQQNO@cluster0.9avndrc.mongodb.net/?retryWrites=true&w=majority&rest_assignment1=Cluster0")
+  .connect("mongodb+srv://bantichouhan610:i9yJtX5RZbvuQQNO@cluster0.9avndrc.mongodb.net/?retryWrites=true&w=majority&rest_assignment1=Cluster0",{
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log("MongoDB Connection Error:", err));
 
