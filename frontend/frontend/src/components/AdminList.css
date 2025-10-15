@@ -1,0 +1,49 @@
+.admin-list-container {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.admin-list-container h2 {
+  color: #333;
+}
+
+.admin-list-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.admin-list-container th,
+.admin-list-container td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.admin-list-container th {
+  background-color: #007bff;
+  color: white;
+}
+
+.admin-list-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.admin-list-container button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin: 0 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-list-container button:hover {
+  opacity: 0.8;
+}
+
+.admin-list-container button:nth-child(2) {
+  background-color: #dc3545;
+}

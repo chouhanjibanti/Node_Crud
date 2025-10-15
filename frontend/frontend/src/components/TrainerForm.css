@@ -1,0 +1,50 @@
+.trainer-form-container {
+  background: #f0f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  margin: 30px auto;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trainer-form-container h3 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.trainer-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trainer-form-container input {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.trainer-form-container button {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.trainer-form-container button:hover {
+  background-color: #117a8b;
+}
+
+.trainer-form-container button[type="button"] {
+  background-color: #6c757d;
+}
+
+.trainer-form-container button[type="button"]:hover {
+  background-color: #5a6268;
+}

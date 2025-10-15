@@ -2,19 +2,24 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const fs = require("fs");
+const cors = require("cors")
 
 // Step-2: Create express app
 const app = express();
+// mongodb+srv://bantichouhan610:i9yJtX5RZbvuQQNO@cluster0.9avndrc.mongodb.net/?retryWrites=true&w=majority&rest_assignment1=Cluster0
 
 // Step-3: Connect MongoDB
 mongoose
-  .connect("mongodb://127.0.0.1:27017/rest_assignment")
+  .connect("mongodb+srv://bantichouhan610:i9yJtX5RZbvuQQNO@cluster0.9avndrc.mongodb.net/?retryWrites=true&w=majority&rest_assignment1=Cluster0")
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log("MongoDB Connection Error:", err));
 
 // Step-4: Middlewares
-app.use(express.json());         //convert the data in json foemay
+app.use(express.json());         //convert the data in json format
 app.use(express.urlencoded({ extended: false }));
+
+// middle ware who will handle the request from the frontend 
+app.use(cors());
 
 // Manual middleware example
 app.use((req, res, next) => {
@@ -108,7 +113,7 @@ app.delete("/api/admin/:id", async (req, res) => {
 });
 
 // ---------------------------------------------------------------------------
-// 🧑‍🏫 TRAINER COLLECTION
+// TRAINER COLLECTION
 // ---------------------------------------------------------------------------
 
 // Step-8: Trainer Schema
