@@ -6,11 +6,11 @@ const cors = require("cors")
 
 // Step-2: Create express app
 const app = express();
-// mongodb+srv://bantichouhan610:i9yJtX5RZbvuQQNO@cluster0.9avndrc.mongodb.net/?retryWrites=true&w=majority&rest_assignment1=Cluster0
+// mongodb+srv://bantichouhan610:i9yJtX5RZbvuQQNO@cluster0.9avndrc.mongodb.net/?retryWrites=true&w=majority&assignment1=Cluster0
 
 // Step-3: Connect MongoDB
 mongoose
-  .connect("mongodb+srv://bantichouhan610:i9yJtX5RZbvuQQNO@cluster0.9avndrc.mongodb.net/?retryWrites=true&w=majority&rest_assignment1=Cluster0",{
+  .connect("mongodb+srv://bantichouhan610:i9yJtX5RZbvuQQNO@cluster0.9avndrc.mongodb.net/?retryWrites=true&w=majority&assignment1=Cluster0",{
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
